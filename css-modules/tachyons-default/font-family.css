@@ -1,0 +1,13 @@
+/*
+	FONT FAMILY GROUPS
+*/
+
+[[@foreach font-family]]
+.[[@use prefix]][[@index]] { font-family: [[@value]]; }
+[[/@foreach]]
+
+[[@responsive]]
+	[[@foreach font-family]]
+	.[[@use prefix]][[@index]]-[[@screen-size]] { font-family: [[@value]]; }
+	[[/@foreach]]
+[[/@responsive]]

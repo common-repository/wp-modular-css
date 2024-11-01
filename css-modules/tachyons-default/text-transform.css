@@ -1,0 +1,15 @@
+/*
+	TEXT TRANSFORM
+*/
+
+.[[@use prefix]]ttc { text-transform: capitalize; }
+.[[@use prefix]]ttl { text-transform: lowercase; }
+.[[@use prefix]]ttu { text-transform: uppercase; }
+.[[@use prefix]]ttn { text-transform: none; }
+
+[[@responsive]]
+	.[[@use prefix]]ttc-[[@screen-size]] { text-transform: capitalize; }
+	.[[@use prefix]]ttl-[[@screen-size]] { text-transform: lowercase; }
+	.[[@use prefix]]ttu-[[@screen-size]] { text-transform: uppercase; }
+	.[[@use prefix]]ttn-[[@screen-size]] { text-transform: none; }
+[[/@responsive]]

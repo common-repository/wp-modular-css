@@ -1,0 +1,13 @@
+/*
+	SKINS:PSEUDO
+*/
+
+[[@foreach colors]]
+.[[@use prefix]]hover-[[@index]]:hover,
+.[[@use prefix]]hover-[[@index]]:focus { color: [[@value]]; }
+[[/@foreach]]
+
+[[@foreach colors]]
+.[[@use prefix]]hover-bg-[[@index]]:hover,
+.[[@use prefix]]hover-bg-[[@index]]:focus { background-color: [[@value]]; }
+[[/@foreach]]

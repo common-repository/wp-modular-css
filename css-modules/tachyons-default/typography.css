@@ -1,0 +1,66 @@
+/*
+	TYPOGRAPHY
+*/
+
+/* Measure is limited to ~66 characters */
+.[[@use prefix]]measure {
+	max-width: 30em;
+}
+
+/* Measure is limited to ~80 characters */
+.[[@use prefix]]measure-wide {
+	max-width: 34em;
+}
+
+/* Measure is limited to ~45 characters */
+.[[@use prefix]]measure-narrow {
+	max-width: 20em;
+}
+
+/* Book paragraph style - paragraphs are indented with no vertical spacing. */
+.[[@use prefix]]indent {
+	text-indent: [[@use typography:extras indent]];
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.[[@use prefix]]small-caps {
+	font-variant: small-caps;
+}
+
+/* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
+.[[@use prefix]]truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+[[@responsive]]
+	.[[@use prefix]]measure-[[@screen-size]] {
+		max-width: 30em;
+	}
+
+	.[[@use prefix]]measure-wide-[[@screen-size]] {
+		max-width: 34em;
+	}
+
+	.[[@use prefix]]measure-narrow-[[@screen-size]] {
+		max-width: 20em;
+	}
+
+	.[[@use prefix]]indent-[[@screen-size]] {
+		text-indent: [[@use typography:extras indent]];
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.[[@use prefix]]small-caps-[[@screen-size]] {
+		font-variant: small-caps;
+	}
+
+	.[[@use prefix]]truncate-[[@screen-size]] {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+[[/@responsive]]

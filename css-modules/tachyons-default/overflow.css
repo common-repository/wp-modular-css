@@ -1,0 +1,35 @@
+/*
+	OVERFLOW
+*/
+
+.[[@use prefix]]overflow-visible { overflow: visible; }
+.[[@use prefix]]overflow-hidden { overflow: hidden; }
+.[[@use prefix]]overflow-scroll { overflow: scroll; }
+.[[@use prefix]]overflow-auto { overflow: auto; }
+
+.[[@use prefix]]overflow-x-visible { overflow-x: visible; }
+.[[@use prefix]]overflow-x-hidden { overflow-x: hidden; }
+.[[@use prefix]]overflow-x-scroll { overflow-x: scroll; }
+.[[@use prefix]]overflow-x-auto { overflow-x: auto; }
+
+.[[@use prefix]]overflow-y-visible { overflow-y: visible; }
+.[[@use prefix]]overflow-y-hidden { overflow-y: hidden; }
+.[[@use prefix]]overflow-y-scroll { overflow-y: scroll; }
+.[[@use prefix]]overflow-y-auto { overflow-y: auto; }
+
+[[@responsive]]
+	.[[@use prefix]]overflow-visible-[[@screen-size]] { overflow: visible; }
+	.[[@use prefix]]overflow-hidden-[[@screen-size]] { overflow: hidden; }
+	.[[@use prefix]]overflow-scroll-[[@screen-size]] { overflow: scroll; }
+	.[[@use prefix]]overflow-auto-[[@screen-size]] { overflow: auto; }
+
+	.[[@use prefix]]overflow-x-visible-[[@screen-size]] { overflow-x: visible; }
+	.[[@use prefix]]overflow-x-hidden-[[@screen-size]] { overflow-x: hidden; }
+	.[[@use prefix]]overflow-x-scroll-[[@screen-size]] { overflow-x: scroll; }
+	.[[@use prefix]]overflow-x-auto-[[@screen-size]] { overflow-x: auto; }
+
+	.[[@use prefix]]overflow-y-visible-[[@screen-size]] { overflow-y: visible; }
+	.[[@use prefix]]overflow-y-hidden-[[@screen-size]] { overflow-y: hidden; }
+	.[[@use prefix]]overflow-y-scroll-[[@screen-size]] { overflow-y: scroll; }
+	.[[@use prefix]]overflow-y-auto-[[@screen-size]] { overflow-y: auto; }
+[[/@responsive]]

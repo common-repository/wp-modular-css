@@ -1,0 +1,13 @@
+/*
+	TEXT DECORATION
+*/
+
+.[[@use prefix]]strike { text-decoration: line-through; }
+.[[@use prefix]]underline { text-decoration: underline; }
+.[[@use prefix]]no-underline { text-decoration: none; }
+
+[[@responsive]]
+	.[[@use prefix]]strike-[[@screen-size]] { text-decoration: line-through; }
+	.[[@use prefix]]underline-[[@screen-size]] { text-decoration: underline; }
+	.[[@use prefix]]no-underline-[[@screen-size]] { text-decoration: none; }
+[[/@responsive]]

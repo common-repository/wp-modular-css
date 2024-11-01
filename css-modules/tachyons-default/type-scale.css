@@ -1,0 +1,21 @@
+/*
+	TYPE SCALE
+*/
+
+[[@foreach type-scale:extras]]
+.[[@use prefix]]f-[[@index]] { font-size: [[@value]]; }
+[[/@foreach]]
+
+[[@foreach type-scale]]
+.[[@use prefix]]f[[@index]] { font-size: [[@value]]; }
+[[/@foreach]]
+
+[[@responsive]]
+	[[@foreach type-scale:extras]]
+	.[[@use prefix]]f-[[@index]]-[[@screen-size]] { font-size: [[@value]]; }
+	[[/@foreach]]
+
+	[[@foreach type-scale]]
+	.[[@use prefix]]f[[@index]]-[[@screen-size]] { font-size: [[@value]]; }
+	[[/@foreach]]
+[[/@responsive]]

@@ -1,0 +1,13 @@
+/*
+	OPACITY
+*/
+
+[[@foreach opacity]]
+.[[@use prefix]]o-[[@index]] { opacity: [[@value]]; }
+[[/@foreach]]
+
+[[@responsive]]
+	[[@foreach opacity]]
+	.[[@use prefix]]o-[[@index]]-[[@screen-size]] { opacity: [[@value]]; }
+	[[/@foreach]]
+[[/@responsive]]

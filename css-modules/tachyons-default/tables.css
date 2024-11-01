@@ -1,0 +1,27 @@
+/*
+	TABLES
+*/
+
+.[[@use prefix]]collapse {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+[[@foreach tables:striped-bg-colors]]
+.[[@use prefix]]striped--[[@index]]:nth-child(odd) {
+	background-color: [[@value]];
+}
+[[/@foreach]]
+
+[[@responsive]]
+	.[[@use prefix]]collapse-[[@screen-size]] {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	[[@foreach tables:striped-bg-colors]]
+	.[[@use prefix]]striped--[[@index]]-[[@screen-size]]:nth-child(odd) {
+		background-color: [[@value]];
+	}
+	[[/@foreach]]
+[[/@responsive]]

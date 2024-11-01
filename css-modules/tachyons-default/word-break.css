@@ -1,0 +1,13 @@
+/*
+	WORD BREAK
+*/
+
+.[[@use prefix]]word-normal { word-break: normal; }
+.[[@use prefix]]word-wrap { word-break: break-all; }
+.[[@use prefix]]word-nowrap { word-break: keep-all; }
+
+[[@responsive]]
+	.[[@use prefix]]word-normal-[[@screen-size]] { word-break: normal; }
+	.[[@use prefix]]word-wrap-[[@screen-size]] { word-break: break-all; }
+	.[[@use prefix]]word-nowrap-[[@screen-size]] { word-break: keep-all; }
+[[/@responsive]]

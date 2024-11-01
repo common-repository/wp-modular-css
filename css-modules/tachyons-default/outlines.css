@@ -1,0 +1,13 @@
+/*
+	OUTLINES
+*/
+
+[[@foreach outlines]]
+.[[@use prefix]]outline-[[@index]] { outline: [[@value]]; }
+[[/@foreach]]
+
+[[@responsive]]
+	[[@foreach outlines]]
+	.[[@use prefix]]outline-[[@index]]-[[@screen-size]] { outline: [[@value]]; }
+	[[/@foreach]]
+[[/@responsive]]

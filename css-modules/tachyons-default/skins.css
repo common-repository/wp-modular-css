@@ -1,0 +1,25 @@
+/*
+	SKINS
+ */
+
+/* Text colors */
+
+[[@foreach colors]]
+.[[@use prefix]][[@index]] { color: [[@value]]; }
+[[/@foreach]]
+
+/* Background colors */
+
+[[@foreach colors]]
+.[[@use prefix]]bg-[[@index]] { background-color: [[@value]]; }
+[[/@foreach]]
+
+[[@responsive]]
+	[[@foreach colors]]
+	.[[@use prefix]][[@index]] { color: [[@value]]; }
+	[[/@foreach]]
+
+	[[@foreach colors]]
+	.[[@use prefix]]bg-[[@index]] { background-color: [[@value]]; }
+	[[/@foreach]]
+[[/@responsive]]

@@ -1,0 +1,29 @@
+/*
+	WIDTHS
+*/
+
+[[@foreach widths]]
+.[[@use prefix]]w[[@index]] { width: [[@value]]; }
+[[/@foreach]]
+
+[[@foreach widths:percentages]]
+.[[@use prefix]]w-[[@index]] { width: [[@value]]; }
+[[/@foreach]]
+
+[[@foreach widths:extras]]
+.[[@use prefix]]w-[[@index]] { width: [[@value]]; }
+[[/@foreach]]
+
+[[@responsive]]
+	[[@foreach widths]]
+	.[[@use prefix]]w[[@index]]-[[@screen-size]] { width: [[@value]]; }
+	[[/@foreach]]
+
+	[[@foreach widths:percentages]]
+	.[[@use prefix]]w-[[@index]]-[[@screen-size]] { width: [[@value]]; }
+	[[/@foreach]]
+
+	[[@foreach widths:extras]]
+	.[[@use prefix]]w-[[@index]]-[[@screen-size]] { width: [[@value]]; }
+	[[/@foreach]]
+[[/@responsive]]

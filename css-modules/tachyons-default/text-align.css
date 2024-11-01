@@ -1,0 +1,15 @@
+/*
+	TEXT ALIGN
+*/
+
+.[[@use prefix]]tl { text-align: left; }
+.[[@use prefix]]tr { text-align: right; }
+.[[@use prefix]]tc { text-align: center; }
+.[[@use prefix]]tj { text-align: justify; }
+
+[[@responsive]]
+	.[[@use prefix]]tl-[[@screen-size]] { text-align: left; }
+	.[[@use prefix]]tr-[[@screen-size]] { text-align: right; }
+	.[[@use prefix]]tc-[[@screen-size]] { text-align: center; }
+	.[[@use prefix]]tj-[[@screen-size]] { text-align: justify; }
+[[/@responsive]]

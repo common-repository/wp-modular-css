@@ -1,0 +1,30 @@
+/*
+	UTILITIES
+*/
+
+/* Equivalent to .overflow-y-scroll */
+.[[@use prefix]]overflow-container {
+	overflow-y: scroll;
+}
+
+.[[@use prefix]]center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.[[@use prefix]]mr-auto { margin-right: auto; }
+.[[@use prefix]]ml-auto { margin-left:  auto; }
+
+[[@responsive]]
+	.[[@use prefix]]overflow-container-[[@screen-size]] {
+		overflow-y: scroll;
+	}
+
+	.[[@use prefix]]center-[[@screen-size]] {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.[[@use prefix]]mr-auto-[[@screen-size]] { margin-right: auto; }
+	.[[@use prefix]]ml-auto-[[@screen-size]] { margin-left:  auto; }
+[[/@responsive]]
